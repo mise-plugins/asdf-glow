@@ -11,5 +11,5 @@ toolPath="${ASDF_INSTALL_PATH}/bin/glow"
 cd "${ASDF_DOWNLOAD_PATH}"
 
 tar xzf glow.tar.gz
-mv ./glow "${toolPath}"
+mv "./glow_${ASDF_INSTALL_VERSION}_$(uname)_$(uname -m)/glow" "${toolPath}"
 chmod +x "${toolPath}"
